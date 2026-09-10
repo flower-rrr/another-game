@@ -5,19 +5,19 @@ const ctx = canvas.getContext("2d")
 window.addEventListener('keydown', (e) => keys[e.key] = true);
 window.addEventListener('keyup', (e) => keys[e.key] = false);
 
-function update() {
+function gameUpdate() {
 
 
 }
 
-function draw() {
+function gameDraw() {
 
 
 }
 
-function gameloop() {
-  update()
-  draw()
+function gameLoop() {
+  gameUpdate()
+  gameDraw()
   requestAnimationFrame(gameloop)
 }
 
