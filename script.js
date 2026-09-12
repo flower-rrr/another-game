@@ -1,4 +1,6 @@
-const canvas = document.getElementById("game");
+const title = document.getElementById("title")
+const game = document.getElementById("game")
+const canvas = document.getElementById("gameCanva");
 
 const ctx = canvas.getContext("2d");
 let ui = "title";
@@ -29,10 +31,16 @@ function titleDraw() {
 }
 
 function mainLoop() {
+  
+  
   if (ui == "game") {
+    game.style.display = "block"
+    title.style.display = "none"
     gameUpdate();
     gameDraw();
   } else if (ui == "title") {
+    game.style.display = "none"
+    title.style.display = "block"
     titleDraw();
   }
   requestAnimationFrame(mainloop);
