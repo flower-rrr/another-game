@@ -12,9 +12,23 @@ body {
   
   
 }
+.titleText {
+  font-size: 4rem;
+  font-weight: 750;
+  margin-bottom: 1rem;
+  
+}
+.titleSubtext {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  
+  
+}
 .startButton {
   text-align: center;
   width: 10vw;
+  cursor: pointer;
   
   
 }
