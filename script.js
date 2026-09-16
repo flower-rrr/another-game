@@ -41,7 +41,7 @@ function mainLoop() {
     gameDraw();
   } else if (ui == "title") {
     game.style.display = "none"
-    title.style.display = "block"
+    title.style.display = "flex"
     titleDraw();
   }
   requestAnimationFrame(mainloop);
