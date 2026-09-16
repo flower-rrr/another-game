@@ -4,6 +4,9 @@ body {
   background-color: #000000;
   color: #FFFFFF;
 }
-.hidden {
-  display: none;
+.startButton {
+  text-align: center;
+  width: 10vw;
+  
+  
 }
