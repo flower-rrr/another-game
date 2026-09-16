@@ -15,7 +15,7 @@ const keys = {
 window.addEventListener('keydown', (e) => keys[e.key] = true);
 window.addEventListener('keyup', (e) => keys[e.key] = false);
 
-const startGame = function() {ui = "game"};
+window.startGame = function() {ui = "game"};
 
 function gameUpdate() {
 
