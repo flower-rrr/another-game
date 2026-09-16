@@ -53,7 +53,7 @@ function mainLoop() {
     console.log(ui)
     
   }
-  requestAnimationFrame(mainloop);
+  requestAnimationFrame(mainLoop);
 }
 
 mainLoop();
