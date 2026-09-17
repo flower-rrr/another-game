@@ -1,6 +1,14 @@
-const title = document.getElementById("title")
-const game = document.getElementById("game")
+const title = document.getElementById("title");
+const startForm = document.getElementById("startForm");
+const game = document.getElementById("game");
 const canvas = document.getElementById("gameCanva");
+
+startForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+  let nickname = document.getElementById("nicknameInput").value;
+  console.log(nickname);
+  document.getElementById("nicknameInput").value = "";
+});
 
 const ctx = canvas.getContext("2d");
 let ui = "title";
@@ -43,6 +51,7 @@ function mainLoop() {
     gameUpdate();
     gameDraw();
   } else if (ui == "title") {
+    
     game.style.display = "none"
     title.style.display = "flex"
     titleDraw();
