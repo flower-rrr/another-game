@@ -28,8 +28,20 @@ body {
 }
 .startButton {
   text-align: center;
-  width: 10vw;
+  margin: 1rem;
+  width: 30vw;
+  height: 10vw;
   cursor: pointer;
+  
+  
+}
+.startInput {
+  text-align: center;
+  margin:1rem;
+  width: 45vw;
+  height: 8vw;
+  cursor: text;
+  
   
   
 }
