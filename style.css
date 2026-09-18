@@ -27,19 +27,22 @@ body {
   
 }
 .startButton {
+  font-size: 0.8rem;
   text-align: center;
-  margin: 1rem;
-  width: 30vw;
-  height: 10vw;
+  border-radius: 10px;
+  margin: 2rem;
+  width: 26vw;
+  height: 5vw;
   cursor: pointer;
   
   
 }
 .startInput {
+  font-size: 0.8rem;
   text-align: center;
   margin:1rem;
   width: 45vw;
-  height: 8vw;
+  height: 4vw;
   cursor: text;
   
   
