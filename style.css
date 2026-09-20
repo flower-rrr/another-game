@@ -14,6 +14,12 @@ body {
   
   
 }
+.titleForm {
+  align-items: center;
+  
+  
+  
+}
 .titleText {
   font-size: 4rem;
   font-weight: 750;
@@ -27,7 +33,7 @@ body {
   
   
 }
-.startButton {
+.titleButton {
   font-size: 0.8rem;
   text-align: center;
   border-radius: 10px;
@@ -38,7 +44,7 @@ body {
   
   
 }
-.startInput {
+.titleInput {
   font-size: 0.8rem;
   text-align: center;
   margin:1rem;
