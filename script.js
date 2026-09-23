@@ -2,7 +2,7 @@ const randint = (start, stop) => {
   return Math.floor(Math.random() * (stop-start+1));
 };
 
-
+let nickname;
 const title = document.getElementById("title");
 const startForm = document.getElementById("startForm");
 const game = document.getElementById("game");
@@ -10,9 +10,11 @@ const canvas = document.getElementById("gameCanva");
 
 startForm.addEventListener("submit", function(event) {
   event.preventDefault();
-  let nickname = document.getElementById("nicknameInput").value;
+  nickname = document.getElementById("nicknameInput").value;
   console.log(nickname);
   document.getElementById("nicknameInput").value = "";
+  ui = "game";
+  const player = Entity("player", 1, 0, 0, {}, nickname);
 });
 
 class Entity {
@@ -43,11 +45,6 @@ const keys = {
 
 window.addEventListener('keydown', (e) => keys[e.key] = true);
 window.addEventListener('keyup', (e) => keys[e.key] = false);
-
-window.startGame = function() {
-  ui = "game";
-  const player = Entity("player", 1, 0, 0, {}, nickname)
-  
 
 function gameUpdate() {
 
