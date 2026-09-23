@@ -74,9 +74,6 @@ function mainLoop() {
     title.style.display = "flex";
     titleDraw();
   }
-  
-    
-  }
   requestAnimationFrame(mainLoop);
 }
 
