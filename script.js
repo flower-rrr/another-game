@@ -33,7 +33,6 @@ class Entity {
 
 const ctx = canvas.getContext("2d");
 let ui = "title";
-let test = 0;
 
 const keys = {
   ArrowUp: false,
@@ -68,20 +67,17 @@ function mainLoop() {
   
   
   if (ui == "game") {
-    game.style.display = "block"
-    title.style.display = "none"
+    game.style.display = "block";
+    title.style.display = "none";
     gameUpdate();
     gameDraw();
   } else if (ui == "title") {
     
-    game.style.display = "none"
-    title.style.display = "flex"
+    game.style.display = "none";
+    title.style.display = "flex";
     titleDraw();
   }
-  test = test + 1;
-  if (test % 3000 == 0) {
-    console.log(test)
-    console.log(ui)
+  
     
   }
   requestAnimationFrame(mainLoop);
