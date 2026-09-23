@@ -47,7 +47,7 @@ window.addEventListener('keyup', (e) => keys[e.key] = false);
 window.startGame = function() {
   ui = "game";
   const player = Entity("player", 1, 0, 0, {}, nickname)
-  mainLoop();
+  
 
 function gameUpdate() {
 
@@ -83,4 +83,4 @@ function mainLoop() {
   requestAnimationFrame(mainLoop);
 }
 
-
+mainLoop();
