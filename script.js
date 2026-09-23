@@ -14,7 +14,7 @@ startForm.addEventListener("submit", function(event) {
   console.log(nickname);
   document.getElementById("nicknameInput").value = "";
   ui = "game";
-  const player = Entity("player", 1, 0, 0, {}, nickname);
+  const player = new Entity("player", 1, 0, 0, {}, nickname);
 });
 
 class Entity {
