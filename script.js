@@ -14,18 +14,7 @@ startForm.addEventListener("submit", function(event) {
   console.log(nickname);
   document.getElementById("nicknameInput").value = "";
   ui = "game";
-  const player = new Entity("player", 1, 0, 0, {}, nickname);
-});
-
-class Entity {
-  constructor(type = "player", level = 1, x, y, state = {}, name = "") {
-    this.type = type;
-    this.level = level;
-    this.x = x;
-    this.y = y;
-    this.state = state;
-    this.name = name;
-  }
+  
   
   
   
@@ -52,11 +41,8 @@ function gameUpdate() {
 }
 
 function gameDraw() {
-
-
-}
-
-function titleDraw() {
+  ctx.fillStyle = "white"
+  ctx.fillRect(0, 0, canva.width, canva.height);
 
 }
 
@@ -72,7 +58,7 @@ function mainLoop() {
     
     game.style.display = "none";
     title.style.display = "flex";
-    titleDraw();
+    
   }
   requestAnimationFrame(mainLoop);
 }
