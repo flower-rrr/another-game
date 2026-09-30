@@ -38,7 +38,7 @@ function gameUpdate() {
 
 function gameDraw() {
   ctx.fillStyle = "white"
-  ctx.fillRect(0, 0, canva.width, canva.height);
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 }
 
