@@ -14,7 +14,7 @@ startForm.addEventListener("submit", function(event) {
   console.log(nickname);
   document.getElementById("nicknameInput").value = "";
   ui = "game";
-};
+});
 
 
 
