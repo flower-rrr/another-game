@@ -2,7 +2,9 @@ const randint = (start, stop) => {
   return Math.floor(Math.random() * (stop-start+1));
 };
 
+let transalpha = 255
 let nickname;
+let lt = 0;
 const title = document.getElementById("title");
 const startForm = document.getElementById("startForm");
 const game = document.getElementById("game");
@@ -31,7 +33,7 @@ const keys = {
 window.addEventListener('keydown', (e) => keys[e.key] = true);
 window.addEventListener('keyup', (e) => keys[e.key] = false);
 
-function gameUpdate() {
+function gameUpdate(dt) {
 
 
 }
@@ -40,15 +42,20 @@ function gameDraw() {
   ctx.fillStyle = "white"
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+
+  //轉場
+  ctx.fillStyle = "000000" + transalpha.toString(16);
+  ctx.fillRect(0, 0, canvas.width, canvas.height)
+
 }
 
-function mainLoop() {
-  
+function mainLoop(t) {
+  dt = (t - lt)/1000
   
   if (ui == "game") {
     game.style.display = "block";
     title.style.display = "none";
-    gameUpdate();
+    gameUpdate(dt);
     gameDraw();
   } else if (ui == "title") {
     
@@ -59,4 +66,4 @@ function mainLoop() {
   requestAnimationFrame(mainLoop);
 }
 
-mainLoop();
+requestAnimationFrame(mainLoop);
